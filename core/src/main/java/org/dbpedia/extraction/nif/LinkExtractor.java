@@ -29,9 +29,9 @@ public class LinkExtractor implements NodeVisitor {
 
 	/**
 	 * Gets called when entering an element
-	 * -handle text cleanup and remove Wikipedia specific stuff like reference
-	 * numbers
-	 * -if we encounter a link, we make a new nif:Word
+	 * - handle text cleanup and remove Wikipedia specific stuff like reference
+	 *   numbers
+	 * - if we encounter a link, we make a new nif:Word
 	 * -we get the text out of a whitelist of elements.
 	 * If we encounter a non-whitelisted element, we set this.skipLevel to the
 	 * current depth
