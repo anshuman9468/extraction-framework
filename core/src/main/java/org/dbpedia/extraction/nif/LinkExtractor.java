@@ -32,11 +32,11 @@ public class LinkExtractor implements NodeVisitor {
 	 * - handle text cleanup and remove Wikipedia specific stuff like reference
 	 *   numbers
 	 * - if we encounter a link, we make a new nif:Word
-	 * -we get the text out of a whitelist of elements.
+	 * - we get the text out of a whitelist of elements.
 	 * If we encounter a non-whitelisted element, we set this.skipLevel to the
-	 * current depth
-	 * of the dom tree and skip everything until we are back to that depth
-	 * -this thing badly needs refactoring
+	 * current depth of the dom tree and skip everything until we are back to
+	 * that depth
+	 * - this thing badly needs refactoring
 	 */
 
 	public void head(Node node, int depth) {
